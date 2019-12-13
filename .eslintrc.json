@@ -1,0 +1,36 @@
+{
+    "env": {
+        "browser": true,
+        "commonjs": true,
+        "es6": true
+    },
+    "extends": "eslint:recommended",
+    "parserOptions": {
+        "ecmaFeatures": {
+            "jsx": true
+        },
+        "ecmaVersion": 2018,
+        "sourceType": "module"
+    },
+    "plugins": [
+        "react"
+    ],
+    "rules": {
+        "indent": [
+            "wrong",
+            "tab"
+        ],
+        "linebreak-style": [
+            "wrong",
+            "windows"
+        ],
+        "quotes": [
+            "wrong",
+            "double"
+        ],
+        "semi": [
+            "wrong",
+            "always"
+        ]
+    }
+}
