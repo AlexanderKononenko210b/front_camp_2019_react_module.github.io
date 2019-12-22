@@ -9,6 +9,12 @@ const movieSvc = {
             return array;
         }, []);
         return result;
+    },
+    getMovieInfo(id, movies) {
+        if(id && movies) {
+            const movie = movies.find(item => item.id === +id);
+            return movie;
+        }
     }
 }
 

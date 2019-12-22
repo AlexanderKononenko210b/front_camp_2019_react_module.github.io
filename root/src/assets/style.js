@@ -79,29 +79,32 @@ const style = {
     },
     card: {
         margin: "10px",
-        maxWidth: "350px",
-        backgroundColor: "#232323",
+        maxWidth: "300px",
+        backgroundColor: "#232323"
     },
 
     //description container style
     detailBlockHeader: {
         display: "inline-block",
-        height: "400px"
+        width: "100%",
     },
-    detailImage: {
-        textLine: "center",
-        margin: "10px",
-        display: "inline-block",
-        maxWidth: "350px"
+    detailImgContainer: {
+        width: "25%",
+        float: "left"
     },
-    detailDescription: {
-        paddingTop: "20px",
-        display: "inline-block",
-        maxWidth: "1000px",
+    detailBackImgContainer: {
+        margin: "15px",
+        width: "3%",
+        float: "left",
+        background: "#232323"
     },
-    detailDescriptionHeader: {
-        display: "inline-block",
-        maxWidth: "1000px",
+    detailDescriptionContainer: {
+        width: "70%",
+        float: "left"
+    },
+    backImg: {
+        width: "100%",
+        backgroundColor: "#232323"
     },
     headerMoviesEmpty: {
         padding: "5px"
@@ -140,14 +143,6 @@ const style = {
     },
     description: {
         padding: "5px",
-    },
-    backIcon: {
-        margin: "5px",
-        textAlign: "right",
-    },
-    backImg: {
-        width: "15px",
-        height: "15px"
     }
 }
 

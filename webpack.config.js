@@ -5,9 +5,10 @@ module.exports = {
         app: ["whatwg-fetch", "@babel/polyfill", "proxy-polyfill", "./root/src/index.js"]
     },
     output: {
-        path: path.resolve(__dirname, "root/dist"),
+        path: path.resolve(__dirname, "./root/dist"),
         filename: "bundle.js",
-        publicPath: 'https://github.com/AlexanderKononenko210b/front_camp_2019_react_module.github.io/'
+        //publicPath: 'https://github.com/AlexanderKononenko210b/front_camp_2019_react_module.github.io/'
+        publicPath: 'https://localhost:3000/'
     },
     module: {
         rules: [
@@ -55,6 +56,7 @@ module.exports = {
         ]
     },
     devServer: {
+        historyApiFallback: true,
         contentBase: path.join(__dirname, 'root/dist'),
         compress: true,
         port: 3000
