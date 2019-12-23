@@ -3,7 +3,7 @@ import React from "react";
 const InvalidUrlComponent = (props) => {
     return (
         <div id="main">
-            <div class="fof">
+            <div className="fof">
                     <h1>Error 404</h1>
             </div>
         </div>
