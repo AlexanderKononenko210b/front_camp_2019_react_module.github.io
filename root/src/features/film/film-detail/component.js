@@ -41,7 +41,7 @@ const MovieDetailComponent = (props) => {
                 <CardComponent
                     containerStyle = { style.detailBackImgContainer }
                     imgStyle = { style.backImg }
-                    itemUrl = { "./image/magnifier.ignore.png" }
+                    itemUrl = { "./root/dist/image/magnifier.ignore.png" }
                     onClickHandler = { backIconOnClickHandle }>
                 </CardComponent>
             </div>
