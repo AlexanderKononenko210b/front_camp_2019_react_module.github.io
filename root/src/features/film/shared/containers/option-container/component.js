@@ -36,4 +36,11 @@ const OptionComponent = (props) => {
     )
 }
 
+OptionComponent.propTypes = {
+    isSearchLeftBtn: propTypes.bool.isRequired,
+    isSortLeftBtn: propTypes.bool.isRequired,
+    type: propTypes.string.isRequired,
+    onClickHandle: propTypes.func.isRequired
+}
+
 export default OptionComponent;

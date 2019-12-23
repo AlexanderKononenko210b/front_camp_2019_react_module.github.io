@@ -58,8 +58,7 @@ const FilmListComponent = (props) => {
 
 FilmListComponent.propTypes = {
     movies: propTypes.array.isRequired,
-    searchCount: propTypes.number.isRequired,
-    movieOnClickHandle: propTypes.func.isRequired
+    searchCount: propTypes.number.isRequired
 }
 
 export default FilmListComponent;

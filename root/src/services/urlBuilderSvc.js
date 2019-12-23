@@ -1,5 +1,4 @@
 import config from "../../../config";
-import { array } from "prop-types";
 
 const urlBuilder = (path = config.PATH_DEFAULT, params,  id = "") => {
 

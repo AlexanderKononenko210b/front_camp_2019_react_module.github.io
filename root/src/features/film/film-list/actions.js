@@ -24,20 +24,6 @@ export function asyncGetMovies(params) {
     }
 }
 
-//export const setSearchOption = (option) => {
-    //return {
-        //type: Actions.SET_SEARCH_OPTION,
-        //payload: option
-    //}
-//}
-
-//export const setSortOption = (option) => {
-    //return {
-        //type: Actions.SET_SORT_ORDER_OPTION,
-        //payload: option
-    //}
-//}
-
 export const setSearchValue = (value) => {
     return {
         type: Actions.SET_SEARCH_VALUE,

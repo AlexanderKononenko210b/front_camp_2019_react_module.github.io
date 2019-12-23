@@ -7,8 +7,7 @@ module.exports = {
     output: {
         path: path.resolve(__dirname, "./root/dist"),
         filename: "bundle.js",
-        //publicPath: 'https://github.com/AlexanderKononenko210b/front_camp_2019_react_module.github.io/'
-        publicPath: 'https://localhost:3000/'
+        publicPath: 'https://github.com/AlexanderKononenko210b/front_camp_2019_react_module.github.io/'
     },
     module: {
         rules: [

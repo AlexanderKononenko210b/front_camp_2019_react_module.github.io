@@ -8,14 +8,13 @@ import style from "../../../assets/style";
 import { Content, ElementsOption } from "../../shared/constants";
 
 const MovieDetailComponent = (props) => {
-    const { movie, movies, backIconOnClickHandle, movieOnClickHandle } = props;
+    const { movie, movies, backIconOnClickHandle } = props;
     let id = 0;
     const moviesList = movies.length > 0
         ?   <div style = { style.moviesGroup}>
                 { movies.map(group => 
                     <div key = {id++} style = { style.movieGroup }>
                         <MoviesGroupComponent
-                            movieOnClickHandle = { movieOnClickHandle }
                             group = { group }
                             type = { ElementsOption.DETAIL_TYPE }>
                         </MoviesGroupComponent>
