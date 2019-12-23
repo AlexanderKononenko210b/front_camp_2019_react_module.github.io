@@ -7,6 +7,8 @@ const Actions = {
     SET_SEARCH_MOVIES: "SET_SEARCH_MOVIES",
     SET_DETAIL_MOVIES: "SET_DETAIL_MOVIES",
     SET_MOVIE_BY_ID: "SET_MOVIE_BY_ID",
+    SET_ERROR: "SET_ERROR",
+    SET_ERROR_INFO: "SET_ERROR_INFO"
 }
 
 export default Actions;

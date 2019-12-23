@@ -3,7 +3,7 @@ import { withRouter } from "react-router-dom";
 import { connect } from "react-redux";
 import { bindActionCreators } from "redux";
 
-import { ElementsOption } from "../../../../shared/constants";
+import { ElementsOption, Constants } from "../../../../shared/constants";
 import { setMovieById, asyncGetMoviesByGenres } from "../../../film-detail";
 import MovieCardComponent from "./component";
 import { movieSvc } from "../../../../../services";
