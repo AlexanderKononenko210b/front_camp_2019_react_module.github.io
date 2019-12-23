@@ -7,7 +7,7 @@ import { InvalidUrlComponent } from "../features/film/shared/components";
 
 const Root = () => {
     return (
-        <Router path={process.env.PUBLIC_URL + '/'}>
+        <Router basename={ process.env.PUBLIC_URL }>
             <Switch>
                 <Route exact path = "/" component = {FilmListContainer} />
                 <Route exact path = "/search" component = {FilmListContainer} />
