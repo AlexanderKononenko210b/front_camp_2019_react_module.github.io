@@ -14,16 +14,12 @@ class MovieCardContainer extends Component {
         this.props = props;
     }
 
-    searchOnClickHandle = (event) => {
-        event.preventDefault();
-        const id = event.target.id;
+    searchOnClickHandle = (id) => {
         const { history } = this.props;
         history.push(`/film/${id}`);
     }
 
-    detailOnClickHandle = (event) => {
-        event.preventDefault();
-        const id = event.target.id;
+    detailOnClickHandle = (id) => {
         const { moviesByGenre } = this.props;
         const movie = movieSvc.getMovieInfo(id, moviesByGenre);
         const { setMovieById, asyncGetMoviesByGenres } = this.props;
@@ -41,8 +37,8 @@ class MovieCardContainer extends Component {
             <MovieCardComponent
             card = { card }
             onClickHandle = { type == ElementsOption.SEARCH_TYPE 
-                ? this.searchOnClickHandle
-                : this.detailOnClickHandle}>
+                ? () => this.searchOnClickHandle(card.id)
+                : () => this.detailOnClickHandle(card.id)}>
             </MovieCardComponent>
         )
     }
